@@ -1,7 +1,7 @@
 """este comentario es para solucionar el missing doc string..."""
 from django.contrib import admin
 from django.urls import path, include
-from .views import home, galeria, formulario, formulario2, login, login_iniciar, cerrar_sesion, eliminar_flor, agregar_carro, carrocompra
+from .views import home, galeria, formulario, formulario2, login, login_iniciar, cerrar_sesion, eliminar_flor, agregar_carro, carrocompra, formulario
 
 
 urlpatterns = [
@@ -14,5 +14,7 @@ urlpatterns = [
     path('cerrar_sesion/', cerrar_sesion, name='CERRAR'),
     path('agregar_carro/<id>/', agregar_carro, name='A_CARRO'),
     path('carrocompra/', carrocompra, name='CARRO'),
+    path('formulario/', formulario, name='FORMU'),
+
 
 ]
